@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Custom styles to complement Bootstrap */
+.display-4 {
+  font-weight: 700;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.border-primary {
+  border-color: #007bff !important;
+}
