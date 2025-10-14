@@ -1,49 +1,25 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Routes, Route } from 'react-router'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import ProfileGrid from './components/ProfileGrid';
-import { people } from './module-data.js';
+import RootLayout from './layouts/RootLayout';
+import Home from './pages/Home';
+import Lab01 from './pages/lab01';
+import Lab02 from './pages/Lab02';
+import NotFound from './pages/NotFound';
 
 function App() {
-  const [columns, setColumns] = useState(3);
-
   return (
-    <div className="min-vh-100 bg-light">
-      <div className="container py-5">
-        <div className="text-center mb-5">
-          <h1 className="display-4 text-primary mb-3">Profile Cards Grid</h1>
-          <div className="row justify-content-center">
-            <div className="col-md-6">
-              <div className="card shadow-sm">
-                <div className="card-body">
-                  <label htmlFor="columns" className="form-label fw-bold">
-                    Number of columns:
-                  </label>
-                  <select 
-                    id="columns"
-                    className="form-select mb-3"
-                    value={columns} 
-                    onChange={(e) => setColumns(Number(e.target.value))}
-                  >
-                    <option value={1}>1 Column</option>
-                    <option value={2}>2 Columns</option>
-                    <option value={3}>3 Columns</option>
-                    <option value={4}>4 Columns</option>
-                    <option value={5}>5 Columns</option>
-                  </select>
-                  <p className="text-muted mb-0">
-                    Showing <span className="fw-bold text-primary">{people.length}</span> profiles in <span className="fw-bold text-primary">{columns}</span> column{columns !== 1 ? 's' : ''}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <ProfileGrid people={people} columns={columns} />
-      </div>
-    </div>
+    <>
+      <Routes>
+        <Route element={<RootLayout />}>
+          <Route path="home" element={<Home />} />
+          <Route path="lab01" element={<Lab01 />} />
+          <Route path="lab02/:id" element={<Lab02 />} />
+          <Route path="/*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </>
   )
 }
 

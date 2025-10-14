@@ -5,6 +5,27 @@
   text-align: center;
 }
 
+/* Active navigation link styling */
+.nav-link.active {
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 4px;
+}
+
+/* Profile card link styling */
+a:has(.card) {
+  transition: transform 0.2s ease-in-out;
+  display: block;
+}
+
+a:has(.card):hover {
+  transform: translateY(-5px);
+}
+
+a:has(.card) .card {
+  cursor: pointer;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -52,5 +73,5 @@
 }
 
 .border-primary {
-  border-color: #007bff !important;
+  border-color: #09ff00 !important;
 }

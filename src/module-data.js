@@ -1,72 +1,72 @@
 export const people = [
 {
     id: 1,
-    name: "Olga",
-    birthDate: "1980-02-28",
-    email: "olga@wsei.edu.pl",
-    phone: "741-602-188"
+    name: "Urszula",
+    birthDate: "2004-07-04",
+    email: "urszula@wsei.edu.pl",
+    phone: "492-719-515"
 },
 {
     id: 2,
-    name: "Katarzyna",
-    birthDate: "2004-02-13",
-    email: "katarzyna@wsei.edu.pl",
-    phone: "421-213-598"
+    name: "Damian",
+    birthDate: "1998-06-28",
+    email: "damian@wsei.edu.pl",
+    phone: "177-927-236"
 },
 {
     id: 3,
-    name: "Filip",
-    birthDate: "1997-11-23",
-    email: "filip@wsei.edu.pl",
-    phone: "445-657-406"
+    name: "Wieslaw",
+    birthDate: "1993-03-19",
+    email: "wieslaw@wsei.edu.pl",
+    phone: "352-385-747"
 },
 {
     id: 4,
-    name: "Cecylia",
-    birthDate: "2003-11-18",
-    email: "cecylia@wsei.edu.pl",
-    phone: "188-125-934"
+    name: "Ewa",
+    birthDate: "1996-10-09",
+    email: "ewa@wsei.edu.pl",
+    phone: "379-831-734"
 },
 {
     id: 5,
-    name: "Regina",
-    birthDate: "1996-12-11",
-    email: "regina@wsei.edu.pl",
-    phone: "143-810-635"
+    name: "Katarzyna",
+    birthDate: "1985-10-05",
+    email: "katarzyna@wsei.edu.pl",
+    phone: "371-499-958"
 },
 {
     id: 6,
-    name: "Norbert",
-    birthDate: "1984-01-01",
-    email: "norbert@wsei.edu.pl",
-    phone: "228-979-648"
+    name: "Filip",
+    birthDate: "2002-10-18",
+    email: "filip@wsei.edu.pl",
+    phone: "269-620-937"
 },
 {
     id: 7,
-    name: "Gabriela",
-    birthDate: "1996-05-06",
-    email: "gabriela@wsei.edu.pl",
-    phone: "895-108-651"
+    name: "Filip",
+    birthDate: "2000-11-06",
+    email: "filip2@wsei.edu.pl",
+    phone: "323-943-872"
 },
 {
     id: 8,
-    name: "Anna",
-    birthDate: "2002-01-08",
-    email: "anna@wsei.edu.pl",
-    phone: "246-363-375"
+    name: "Gabriela",
+    birthDate: "1999-07-14",
+    email: "gabriela@wsei.edu.pl",
+    phone: "178-959-203"
 },
 {
     id: 9,
-    name: "Stefan",
-    birthDate: "2002-07-05",
-    email: "stefan@wsei.edu.pl",
-    phone: "947-688-814"
+    name: "Adam",
+    birthDate: "1980-06-17",
+    email: "adam@wsei.edu.pl",
+    phone: "802-455-861"
 },
 {
     id: 10,
-    name: "Teresa",
-    birthDate: "2002-02-12",
-    email: "teresa@wsei.edu.pl",
-    phone: "203-798-446"
+    name: "Henryk",
+    birthDate: "1989-03-05",
+    email: "henryk@wsei.edu.pl",
+    phone: "386-180-255"
 }
 ];
