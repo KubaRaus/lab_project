@@ -22,6 +22,9 @@ function NavBarMenuApp() {
             <Nav.Link as={NavLink} to="/lab02">
               Laboratorium 2
             </Nav.Link>
+            <Nav.Link as={NavLink} to="/lab3">
+              Laboratorium 3
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
