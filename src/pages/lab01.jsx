@@ -1,11 +1,13 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css'
 import ProfileGrid from '../components/ProfileGrid';
-import { people } from '../module-data.js';
+import AppContext from '../data/AppContext';
 
 function Lab01() {
   const [columns, setColumns] = useState(3);
+  const context = useContext(AppContext);
+  const items = context.items;
 
   return (
     <div className="bg-light py-5">
@@ -32,7 +34,7 @@ function Lab01() {
                     <option value={5}>5 Columns</option>
                   </select>
                   <p className="text-muted mb-0">
-                    Showing <span className="fw-bold text-primary">{people.length}</span> profiles in <span className="fw-bold text-primary">{columns}</span> column{columns !== 1 ? 's' : ''}
+                    Showing <span className="fw-bold text-primary">{items.length}</span> profiles in <span className="fw-bold text-primary">{columns}</span> column{columns !== 1 ? 's' : ''}
                   </p>
                 </div>
               </div>
@@ -40,7 +42,7 @@ function Lab01() {
           </div>
         </div>
 
-        <ProfileGrid people={people} columns={columns} />
+        <ProfileGrid people={items} columns={columns} />
       </div>
     </div>
   )

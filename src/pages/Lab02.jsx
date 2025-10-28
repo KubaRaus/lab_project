@@ -1,10 +1,13 @@
+import { useContext } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useParams, Link } from 'react-router';
-import { people } from '../module-data.js';
+import AppContext from '../data/AppContext';
 import ProfileCard from '../components/ProfileCard';
 
 function Lab02() {
   const { id } = useParams();
+  const context = useContext(AppContext);
+  const items = context.items;
   
   // Check if ID parameter is missing
   if (!id) {
@@ -29,7 +32,7 @@ function Lab02() {
   }
   
   // Find the person with the matching id
-  const person = people.find(p => p.id === parseInt(id));
+  const person = items.find(p => p.id === parseInt(id));
 
   // If person not found, show error message
   if (!person) {
@@ -103,7 +106,7 @@ function Lab02() {
                     ← Poprzedni profil
                   </Link>
                 )}
-                {parseInt(id) < people.length && (
+                {parseInt(id) < items.length && (
                   <Link 
                     to={`/lab02/${parseInt(id) + 1}`} 
                     className="btn btn-outline-primary"

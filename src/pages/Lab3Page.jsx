@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { people } from '../module-data.js';
 import ProfileCardLab3 from '../components/ProfileCardLab3';
 import MyContainer from '../components/MyContainer';
 
@@ -14,7 +13,7 @@ function Lab3Page() {
           </p>
         </div>
 
-        <MyContainer element={ProfileCardLab3} data={people.slice(0, 6)} />
+        <MyContainer element={ProfileCardLab3} />
       </div>
     </div>
   );
