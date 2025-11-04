@@ -1,13 +1,11 @@
-import { useContext } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useParams, Link } from 'react-router';
-import AppContext from '../data/AppContext';
+import useData from '../hooks/useData';
 import ProfileCard from '../components/ProfileCard';
 
 function Lab02() {
   const { id } = useParams();
-  const context = useContext(AppContext);
-  const items = context.items;
+  const items = useData();
   
   // Check if ID parameter is missing
   if (!id) {

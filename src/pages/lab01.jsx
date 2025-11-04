@@ -1,13 +1,12 @@
-import { useState, useContext } from 'react'
+import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css'
 import ProfileGrid from '../components/ProfileGrid';
-import AppContext from '../data/AppContext';
+import useData from '../hooks/useData';
 
 function Lab01() {
   const [columns, setColumns] = useState(3);
-  const context = useContext(AppContext);
-  const items = context.items;
+  const items = useData();
 
   return (
     <div className="bg-light py-5">
